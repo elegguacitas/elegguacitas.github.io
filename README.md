@@ -22,4 +22,4 @@ Edit `site-config.js` to change the business name, full business name and brand 
 - Secondary portrait: [Unsplash](https://unsplash.com/photos/womans-face-vosaqRpyOBo), shown as inspiration only.
 - Braid line art: [FreeSVG / OpenClipart](https://freesvg.org/zopf-lineart), public domain. Loaded from its SVG download endpoint.
 
-Photos are remote and need an internet connection. Stock images are not presented as client results.
+Photos are local WebP copies sized for the page and load without contacting Unsplash. Hero/contact use one shared file to avoid duplicate downloads. Stock images are not presented as client results.
