@@ -20,6 +20,6 @@ Edit `site-config.js` to change the business name, full business name and brand 
 
 - Hero/contact image: Bjorn Pierre, [Unsplash](https://unsplash.com/photos/a-woman-with-a-braid-in-her-hair-2BrWSvIQjmk), shown as inspiration only.
 - Secondary portrait: [Unsplash](https://unsplash.com/photos/womans-face-vosaqRpyOBo), shown as inspiration only.
-- Braid line art: [FreeSVG / OpenClipart](https://freesvg.org/zopf-lineart), public domain. Loaded from its SVG download endpoint.
+- Braid line art: [FreeSVG / OpenClipart](https://freesvg.org/zopf-lineart), public domain. A resized local copy is in `assets/photos/braid-lineart.png`.
 
-Photos are local WebP copies sized for the page and load without contacting Unsplash. Hero/contact use one shared file to avoid duplicate downloads. Stock images are not presented as client results.
+Photos and braid art are local, optimized assets. Hero/contact use one shared photo to avoid duplicate downloads. Stock photos are not presented as client results.
