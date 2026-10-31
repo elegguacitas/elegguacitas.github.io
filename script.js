@@ -10,7 +10,7 @@ function applySettings(){
   document.querySelectorAll('[data-setting="brandName"]').forEach(el=>el.textContent=config.brandName||"Elegguacita's");
   const brandLine=typeof config.brandLine==='string'?config.brandLine:(config.brandLine?.[language]||'Raíces & Rizos');
   document.querySelectorAll('[data-setting="brandLine"]').forEach(el=>el.textContent=brandLine);
-  document.title=`${config.businessName||"Elegguacita's Raíces & Rizos"} | Hair & Beauty`;
+  document.title=language==='es'?`${config.businessName||"Elegguacita's Raíces & Rizos"} | Trenzas y belleza en La Habana`:`${config.businessName||"Elegguacita's Raíces & Rizos"} | Braids & Beauty in Havana`;
   const description=document.querySelector('meta[name="description"]');
   if(description&&config.location)description.content=language==='es'?`Trenzas, extensiones, cuidado natural y pestañas en ${config.location}.`:`Braids, extensions, natural hair care, and lashes in ${config.location}.`;
   const location=document.querySelector('[data-setting="location"]');

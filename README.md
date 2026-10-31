@@ -6,7 +6,7 @@ A Spanish-first, bilingual static hair and beauty site concept built with HTML, 
 
 Open `index.html` through a local static server. The page opens in Spanish; the ES / EN control switches to English. Mobile navigation opens from the menu button.
 
-## Central settings
+## Social sharing\n\nThe Open Graph and Twitter preview metadata is Spanish-first, with the clean Pages root URL as canonical.\n\n## Central settings
 
 Edit `site-config.js` to change the business name, full business name and brand line, location, email, WhatsApp number, or social URLs. For WhatsApp, use the international number with digits only.
 
@@ -23,5 +23,3 @@ Edit `site-config.js` to change the business name, full business name and brand 
 - Braid line art: [FreeSVG / OpenClipart](https://freesvg.org/zopf-lineart), public domain. Loaded from its SVG download endpoint.
 
 Photos are remote and need an internet connection. Stock images are not presented as client results.
-
-
