@@ -4,6 +4,19 @@ const menuButton=document.querySelector('.menu');
 const nav=document.querySelector('nav');
 const strings=[...document.querySelectorAll('[data-en][data-es]')];
 let language='es';
+function installGoogleAnalytics(measurementId){
+  if(!/^G-[A-Z0-9]+$/.test(measurementId||''))return;
+  window.dataLayer=window.dataLayer||[];
+  window.gtag=function(){window.dataLayer.push(arguments);};
+  window.gtag('js',new Date());
+  window.gtag('config',measurementId);
+  const tag=document.createElement('script');
+  tag.async=true;
+  tag.src=`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
+  document.head.appendChild(tag);
+}
+
+installGoogleAnalytics(config.googleAnalyticsId);
 
 function applySettings(){
   document.querySelectorAll('[data-setting="businessName"]').forEach(el=>el.textContent=config.businessName||"Elegguacita's Raíces & Rizos");

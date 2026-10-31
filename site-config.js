@@ -11,5 +11,6 @@ window.SITE_CONFIG = {
   email: "",
   whatsapp: "", // International digits only, for example 1234567890
   facebook: "",
-  instagram: ""
+  instagram: "",
+  googleAnalyticsId: "G-97GT6PBZ5G"
 };
