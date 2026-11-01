@@ -23,3 +23,18 @@ Edit `site-config.js` to change the business name, full business name and brand 
 - Braid line art: [FreeSVG / OpenClipart](https://freesvg.org/zopf-lineart), public domain. A resized local copy is in `assets/photos/braid-lineart.png`.
 
 Photos and braid art are local, optimized assets. Hero/contact use one shared photo to avoid duplicate downloads. Stock photos are not presented as client results.
+
+
+## Pages and gallery
+
+- `index.html` is the home page, with a short photo preview.
+- `gallery.html` shows the fuller photo gallery.
+- `contact.html` gathers the contact and social links.
+- Edit `site-config.js` to add the official social URLs and contact details. To add or replace a gallery photo, copy a compressed image into `assets/photos/` and update the `galleryPhotos` list in `site-config.js`. Gallery images are marked as inspiration until replaced by Elegguacita's own client-approved photos.
+
+
+### Added gallery inspiration photos
+
+- Gift Habeshaw, local WebP copy: `assets/photos/braids-close.webp` (from the supplied `gift-habeshaw-ptyj_QoPRsQ-unsplash.jpg`).
+- Baptista Ime James, local WebP copy: `assets/photos/braids-glasses.webp` (from the supplied `baptista-ime-james-OaOiK63YIeM-unsplash.jpg`).
+- Alex Robinson, local WebP copy: `assets/photos/braids-garden.webp` (from the supplied `alex-robinson-3IhcN94zWwk-unsplash.jpg`).
