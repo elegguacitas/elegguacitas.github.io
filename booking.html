@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#F5DCC5"><meta name="description" content="Solicitud de cita para Elegguacita's Raíces & Rizos.">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png"><title>Solicitud de cita</title>
+<link rel="stylesheet" href="styles.css"><script src="site-config.js" defer></script><script src="script.js?v=3" defer></script>
+<style>
+.booking-mock{max-width:1120px;margin:auto;padding:54px 7vw 82px}.booking-top{display:flex;justify-content:space-between;gap:25px;align-items:flex-start}.booking-top h1{font-size:clamp(40px,6vw,66px)}.demo-flag{display:inline-block;background:#f4c8c3;color:#78283d;border:1px solid #e5aab0;padding:8px 12px;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.booking-intro{max-width:690px;color:#66675f;font-size:13px;margin:18px 0 24px}.booking-panel{background:var(--paper);border:1px solid #e7dacb;padding:24px;margin-top:14px}.booking-panel h2{font-size:25px;margin:0 0 5px}.booking-help{font-size:11px;color:#77736d;margin:0 0 17px}.month-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 17px}.month-title{font:600 25px var(--serif);color:var(--green);margin:0}.month-badge{font-size:9px;font-weight:700;letter-spacing:.08em;color:#77736d;text-transform:uppercase}.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px}.weekday{text-align:center;padding:5px 2px;color:#77736d;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}.calendar-day{min-height:78px;border:1px solid #e3d7ca;background:#fffaf5;color:var(--ink);padding:8px 7px;text-align:left;display:flex;flex-direction:column;align-items:flex-start;gap:4px}.calendar-day.available{cursor:pointer;border-color:#c6d1bd}.calendar-day.available:hover,.calendar-day.available[aria-pressed=true]{border-color:var(--red);box-shadow:inset 0 -3px var(--red);background:#fff8f1}.calendar-day[aria-pressed=true] .date-number{color:var(--red)}.calendar-day.pending{background:#f4e7dc;border-color:#c98075}.calendar-day:disabled{opacity:.68}.calendar-day .date-number{font:600 19px var(--serif)}.calendar-day .slot-count{font-size:8px;line-height:1.2;color:var(--green)}.calendar-day .pending-label{font-size:8px;line-height:1.2;color:#8b2834;font-weight:700}.calendar-empty{min-height:78px}.calendar-legend{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin-top:13px;font-size:9px;color:#77736d}.reset-demo{border:1px solid #cfc1b4;background:transparent;color:var(--green);padding:7px 10px;font:700 9px var(--sans);cursor:pointer}.reset-demo:hover{border-color:var(--red);color:var(--red)}.reset-demo[hidden]{display:none}.legend-item{display:flex;align-items:center;gap:6px}.legend-dot{width:9px;height:9px;border-radius:50%;background:#a6b99a}.legend-dot.pending-dot{background:var(--red)}.booking-times{display:flex;flex-wrap:wrap;gap:9px}.time-option{border:1px solid #cfc1b4;background:#fffaf5;color:var(--green);padding:10px 14px;font:700 12px var(--sans);cursor:pointer}.time-option[aria-pressed=true],.time-option:hover{background:var(--green);color:#fff}.time-option.pending{background:#f4e7dc;border-color:#c98075;color:#8b2834;cursor:default}.time-option:disabled{opacity:.9}.booking-summary{display:grid;grid-template-columns:1fr auto;align-items:end;gap:18px;margin-top:20px;padding-top:18px;border-top:1px solid #e3d7ca}.booking-summary label{font-size:10px;font-weight:700;color:#77736d;display:grid;gap:6px}.booking-summary input{width:100%;padding:12px;border:1px solid #d9cfc4;background:#fffaf5;font:12px var(--sans);color:var(--ink)}.booking-send{border:0;cursor:pointer;background:var(--green);color:#fff;padding:14px 18px;font:700 11px var(--sans)}.booking-send:disabled{opacity:.45;cursor:not-allowed}.booking-note{background:#f4e7dc;border-left:3px solid var(--red);padding:13px 16px;margin-top:16px;font-size:10px;color:#615b56}.request-preview{display:none;margin-top:15px;background:#edf3e9;border:1px solid #cedac8;padding:15px}.request-preview.visible{display:block}.request-preview b{font:600 17px var(--serif)}.request-preview p{font-size:11px;white-space:pre-line;margin:8px 0 0}.request-status{font-size:10px;color:#78283d;font-weight:700;margin:9px 0 0}.booking-back{display:inline-block;margin-top:23px;color:var(--green);font-size:11px;font-weight:700}.booking-back:hover{color:var(--red)}@media(max-width:620px){.booking-mock{padding:40px 5vw 60px}.booking-top{display:grid}.demo-flag{justify-self:start}.booking-panel{padding:15px}.calendar-grid{gap:4px}.weekday{font-size:8px}.calendar-day,.calendar-empty{min-height:64px}.calendar-day{padding:6px 4px}.calendar-day .date-number{font-size:16px}.calendar-day .slot-count,.calendar-day .pending-label{font-size:7px}.month-title{font-size:22px}.booking-summary{grid-template-columns:1fr}.booking-send{width:100%}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-en="Skip to content" data-es="Saltar al contenido">Saltar al contenido</a>
+<div class="announcement"><span data-en="Beauty with roots. Honest care." data-es="Belleza con raíces. Cuidado con la verdad.">Belleza con raíces. Cuidado con la verdad.</span> ✳ <span data-en="Beauty rooted in every curl." data-es="Belleza con raíces en cada rizo.">Belleza con raíces en cada rizo.</span></div>
+<header><a class="brand" href="index.html#top"><img class="brand-logo" src="assets/rr-logo.png" alt="R&amp;R logo"><span class="brand-copy"><span class="brand-title-group"><span class="brand-name" data-setting="brandName">Elegguacita's</span><span class="brand-divider" aria-hidden="true"></span></span><small data-setting="brandLine">Raíces &amp; Rizos</small></span></a><button class="menu" aria-label="Abrir menú" aria-expanded="false">☰</button><nav><a href="index.html#services" data-en="Services" data-es="Servicios">Servicios</a><a href="gallery.html" data-en="Gallery" data-es="Galería">Galería</a><a href="contact.html" data-en="Contact &amp; social" data-es="Contacto y redes">Contacto y redes</a></nav><div class="actions"><button class="lang" aria-label="Cambiar idioma a inglés" aria-pressed="true">ES <span>/</span> EN</button><a class="button dark" href="booking.html" data-en="Book ↗" data-es="Reservar ↗">Reservar ↗</a></div></header>
+<main id="main"><section class="booking-mock">
+<div class="booking-top"><div><p class="eyebrow" data-en="A SIMPLE WAY TO REQUEST A TIME" data-es="UNA FORMA SENCILLA DE SOLICITAR CITA">UNA FORMA SENCILLA DE SOLICITAR CITA</p><h1 data-en="Find a time<br><em>that works.</em>" data-es="Encuentra un horario<br><em>que te funcione.</em>">Encuentra un horario<br><em>que te funcione.</em></h1></div><span class="demo-flag" data-en="NOVEMBER AVAILABILITY" data-es="DISPONIBILIDAD DE NOVIEMBRE">DISPONIBILIDAD DE NOVIEMBRE</span></div>
+<p class="booking-intro" data-en="Choose a day with sample openings, then choose a time. You can request it through WhatsApp; the studio confirms appointments directly." data-es="Elige un día con horarios de ejemplo y luego selecciona una hora. Puedes solicitarla por WhatsApp; el estudio confirma las citas directamente.">Elige un día con horarios de ejemplo y luego selecciona una hora. Puedes solicitarla por WhatsApp; el estudio confirma las citas directamente.</p>
+<section class="booking-panel" aria-labelledby="monthTitle"><div class="month-bar"><div><p class="month-badge" data-en="Calendar · Havana time" data-es="Calendario · hora de La Habana">Calendario · hora de La Habana</p><h2 class="month-title" id="monthTitle">Noviembre 2026</h2></div><span class="demo-flag" data-en="ALL MONTH" data-es="MES COMPLETO">MES COMPLETO</span></div><p class="booking-help" data-en="Days with a green mark show example openings. Choose a day to see its times." data-es="Los días con una marca verde tienen horarios de ejemplo. Elige un día para ver las horas.">Los días con una marca verde tienen horarios de ejemplo. Elige un día para ver las horas.</p><div class="calendar-grid" id="calendarGrid" role="group" aria-label="Calendario de noviembre"></div><div class="calendar-legend"><span class="legend-item"><i class="legend-dot"></i><span data-en="Example openings" data-es="Horarios de ejemplo">Horarios de ejemplo</span></span><span class="legend-item"><i class="legend-dot pending-dot"></i><span data-en="Request started in this browser" data-es="Solicitud iniciada en este navegador">Solicitud iniciada en este navegador</span></span><button class="reset-demo" id="resetDemo" type="button" hidden data-en="Reset selection" data-es="Restablecer selección">Restablecer selección</button></div></section>
+<section class="booking-panel" aria-labelledby="timeHeading"><h2 id="timeHeading" data-en="Available times" data-es="Horarios disponibles">Horarios disponibles</h2><p class="booking-help" id="chosenDay" data-en="Choose a day first." data-es="Primero elige un día.">Primero elige un día.</p><div class="booking-times" id="bookingTimes" role="group" aria-label="Horarios"></div><div class="booking-summary"><label><span data-en="Your name (optional)" data-es="Tu nombre (opcional)">Tu nombre (opcional)</span><input id="clientName" type="text" autocomplete="name" data-en-placeholder="Name" data-es-placeholder="Nombre" placeholder="Nombre"></label><button class="booking-send" id="requestButton" type="button" disabled data-en="Continue to WhatsApp ↗" data-es="Continuar a WhatsApp ↗">Continuar a WhatsApp ↗</button></div><div class="booking-note" data-en="Sample times only; they are not real availability. Opening WhatsApp does not confirm that a message was sent or reserve the time. The status below is saved only in this browser." data-es="Solo horarios de ejemplo; no representan disponibilidad real. Abrir WhatsApp no confirma que el mensaje se haya enviado ni reserva la hora. El estado de abajo se guarda solo en este navegador.">Solo horarios de ejemplo; no representan disponibilidad real. Abrir WhatsApp no confirma que el mensaje se haya enviado ni reserva la hora. El estado de abajo se guarda solo en este navegador.</div><div class="request-preview" id="requestPreview" aria-live="polite"><b data-en="WhatsApp message" data-es="Mensaje de WhatsApp">Mensaje de WhatsApp</b><p id="messageText"></p><p class="request-status" id="requestStatus"></p></div></section>
+<a class="booking-back" href="index.html" data-en="← Back to the home page" data-es="← Volver a la página principal">← Volver a la página principal</a></section></main>
+<footer><a class="brand" href="index.html#top"><img class="brand-logo" src="assets/rr-logo.png" alt="R&amp;R logo"><span class="brand-copy"><span class="brand-title-group"><span class="brand-name" data-setting="brandName">Elegguacita's</span><span class="brand-divider" aria-hidden="true"></span></span><small data-setting="brandLine">Raíces &amp; Rizos</small></span></a><p data-en="Beauty with roots. Honest care." data-es="Belleza con raíces. Cuidado con la verdad.">Belleza con raíces. Cuidado con la verdad.</p><div class="social"><a href="contact.html" aria-label="Facebook" data-social="facebook">fb</a><a href="contact.html" aria-label="Instagram" data-social="instagram">ig</a><a href="contact.html" aria-label="WhatsApp" data-social="whatsapp">wa</a></div><div class="footer-bottom"><span>© <span id="year"></span> <span data-setting="businessName">Elegguacita's Raíces &amp; Rizos</span></span><span data-en="Designed with care, for every curl." data-es="Diseñado con cariño, para cada rizo.">Diseñado con cariño, para cada rizo.</span><a href="index.html#top" data-en="Home ↑" data-es="Inicio ↑">Inicio ↑</a></div></footer>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const config=window.SITE_CONFIG||{};
+  const grid=document.querySelector('#calendarGrid'),timesRoot=document.querySelector('#bookingTimes'),dayLabel=document.querySelector('#chosenDay'),request=document.querySelector('#requestButton'),preview=document.querySelector('#requestPreview'),message=document.querySelector('#messageText'),status=document.querySelector('#requestStatus'),nameInput=document.querySelector('#clientName');
+  const month=(config.bookingDemoMonth||'2026-11').split('-').map(Number),year=month[0],monthIndex=month[1]-1;
+  const availability=new Map((Array.isArray(config.bookingDemoAvailability)?config.bookingDemoAvailability:[]).map(item=>[item.date,item.times||[]]));
+  const pending=new Set(JSON.parse(sessionStorage.getItem('rrDemoPendingSlots')||'[]'));
+  const resetDemo=document.querySelector('#resetDemo');
+  let selectedDate=null,selectedTime=null;
+  resetDemo.hidden=pending.size===0;
+  resetDemo.addEventListener('click',()=>{pending.clear();sessionStorage.removeItem('rrDemoPendingSlots');selectedDate=null;selectedTime=null;preview.classList.remove('visible');resetDemo.hidden=true;drawCalendar();drawTimes();});
+  const es=()=>document.documentElement.lang==='es';
+  const localDate=(iso)=>{const [y,m,d]=iso.split('-').map(Number);return new Date(y,m-1,d,12);};
+  const isoDate=(date)=>`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
+  const fullDate=(date)=>new Intl.DateTimeFormat(es()?'es-ES':'en-US',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(date);
+  function drawCalendar(){
+    grid.innerHTML='';
+    const weekdayNames=es()?['Lun','Mar','Mié','Jue','Vie','Sáb','Dom']:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+    weekdayNames.forEach(name=>{const el=document.createElement('span');el.className='weekday';el.textContent=name;grid.append(el);});
+    const firstDay=new Date(year,monthIndex,1,12).getDay();
+    const offset=(firstDay+6)%7;
+    for(let i=0;i<offset;i++){const blank=document.createElement('span');blank.className='calendar-empty';blank.setAttribute('aria-hidden','true');grid.append(blank);}
+    const count=new Date(year,monthIndex+1,0,12).getDate();
+    for(let day=1;day<=count;day++){
+      const iso=`${year}-${String(monthIndex+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+      const openings=availability.get(iso)||[],button=document.createElement('button'),isPending=openings.some(time=>pending.has(`${iso}|${time}`));
+      button.type='button';button.className='calendar-day'+(openings.length?' available':'')+(isPending?' pending':'');button.disabled=!openings.length;button.setAttribute('aria-pressed',String(iso===selectedDate));
+      const number=document.createElement('span');number.className='date-number';number.textContent=String(day);button.append(number);
+      if(openings.length){const label=document.createElement('span');label.className='slot-count';label.textContent=es()?`${openings.length} ${openings.length===1?'hora':'horas'}`:`${openings.length} ${openings.length===1?'time':'times'}`;button.append(label);}
+      if(isPending){const label=document.createElement('span');label.className='pending-label';label.textContent=es()?'Solicitud iniciada':'Request started';button.append(label);}
+      if(openings.length)button.addEventListener('click',()=>{selectedDate=iso;selectedTime=null;drawCalendar();drawTimes();});
+      grid.append(button);
+    }
+    document.querySelector('#monthTitle').textContent=new Intl.DateTimeFormat(es()?'es-ES':'en-US',{month:'long',year:'numeric'}).format(new Date(year,monthIndex,1,12));
+  }
+  function drawTimes(){
+    timesRoot.innerHTML='';
+    if(!selectedDate){dayLabel.textContent=es()?'Primero elige un día con horarios.':'Choose a day with openings first.';request.disabled=true;return;}
+    dayLabel.textContent=(es()?'Horarios de ejemplo para ':'Sample times for ')+fullDate(localDate(selectedDate));
+    (availability.get(selectedDate)||[]).forEach(time=>{
+      const key=`${selectedDate}|${time}`,isPending=pending.has(key),button=document.createElement('button');
+      button.type='button';button.className='time-option'+(isPending?' pending':'');button.textContent=isPending?(es()?`${time} · Solicitud iniciada`:`${time} · Request started`):time;button.disabled=isPending;button.setAttribute('aria-pressed',String(time===selectedTime));
+      if(!isPending)button.addEventListener('click',()=>{selectedTime=time;drawTimes();});
+      timesRoot.append(button);
+    });
+    request.disabled=!selectedTime;
+  }
+  function buildMessage(){const date=fullDate(localDate(selectedDate)),name=nameInput.value.trim();return es()?`Hola, quisiera solicitar una cita para el ${date} a las ${selectedTime}.${name?` Mi nombre es ${name}.`:''} ¿Sigue disponible?`:`Hello, I’d like to request an appointment for ${date} at ${selectedTime}.${name?` My name is ${name}.`:''} Is this still available?`;}
+  request.addEventListener('click',()=>{
+    if(!selectedDate||!selectedTime)return;
+    const key=`${selectedDate}|${selectedTime}`,text=buildMessage(),digits=(config.whatsapp||'').replace(/\D/g,'');
+    pending.add(key);sessionStorage.setItem('rrDemoPendingSlots',JSON.stringify([...pending]));resetDemo.hidden=false;
+    message.textContent=text;preview.classList.add('visible');
+    if(digits){status.textContent=es()?'WhatsApp se abrió con el mensaje. La web no puede verificar si pulsaste Enviar; espera la confirmación del estudio.':'WhatsApp opened with the message. The site cannot verify that you pressed Send; wait for the studio to confirm.';window.open(`https://wa.me/${digits}?text=${encodeURIComponent(text)}`,'_blank','noopener,noreferrer');}
+    else status.textContent=es()?'Solicitud iniciada en este navegador.':'Request started in this browser.';
+    drawCalendar();drawTimes();
+  });
+  document.querySelector('.lang').addEventListener('click',()=>queueMicrotask(()=>{drawCalendar();drawTimes();}));
+  drawCalendar();drawTimes();
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

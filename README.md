@@ -38,3 +38,13 @@ Photos and braid art are local, optimized assets. Hero/contact use one shared ph
 - Gift Habeshaw, local WebP copy: `assets/photos/braids-close.webp` (from the supplied `gift-habeshaw-ptyj_QoPRsQ-unsplash.jpg`).
 - Baptista Ime James, local WebP copy: `assets/photos/braids-glasses.webp` (from the supplied `baptista-ime-james-OaOiK63YIeM-unsplash.jpg`).
 - Alex Robinson, local WebP copy: `assets/photos/braids-garden.webp` (from the supplied `alex-robinson-3IhcN94zWwk-unsplash.jpg`).
+
+- `booking.html` is linked from the site header and displays a November 2026 date/time selection flow. Its slots are examples from `bookingDemoAvailability` in `site-config.js`, not live availability.
+
+
+
+## Local fonts
+
+- DM Sans and Playfair Display are served from assets/fonts/ as Latin WOFF2 subsets. The corresponding SIL Open Font License files are included in that folder.
+
+

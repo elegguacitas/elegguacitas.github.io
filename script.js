@@ -19,14 +19,22 @@ function installGoogleAnalytics(measurementId){
 installGoogleAnalytics(config.googleAnalyticsId);
 
 function applySettings(){
+  const sampleProfile=config.instagramSampleProfile;
+  if(sampleProfile){
+    const handle=document.querySelector('[data-sample-instagram-handle]');
+    if(handle){handle.textContent=sampleProfile.handle||'';handle.href=sampleProfile.url||'#';}
+    const name=document.querySelector('[data-sample-profile-name]');
+    if(name)name.textContent=sampleProfile.name||sampleProfile.handle||'';
+    document.querySelectorAll('[data-sample-stat]').forEach(el=>{const key=el.dataset.sampleStat;if(sampleProfile[key]!=null)el.textContent=sampleProfile[key];});
+  }
   document.querySelectorAll('[data-setting="businessName"]').forEach(el=>el.textContent=config.businessName||"Elegguacita's Raíces & Rizos");
   document.querySelectorAll('[data-setting="brandName"]').forEach(el=>el.textContent=config.brandName||"Elegguacita's");
   const brandLine=typeof config.brandLine==='string'?config.brandLine:(config.brandLine?.[language]||'Raíces & Rizos');
   document.querySelectorAll('[data-setting="brandLine"]').forEach(el=>el.innerHTML=brandLine.replace('&', '<i class="brand-amp">&amp;</i>'));
   const headerSizes={'--header-title-size':config.headerTitleSize||'18px','--header-subtitle-size':config.headerSubtitleSize||'8px','--header-mobile-title-size':config.headerMobileTitleSize||'16px','--header-mobile-subtitle-size':config.headerMobileSubtitleSize||'7px'};
   Object.entries(headerSizes).forEach(([property,value])=>document.documentElement.style.setProperty(property,value));
-  const pageKind=window.location.pathname.endsWith('contact.html')?'contact':window.location.pathname.endsWith('gallery.html')?'gallery':'home';
-  const pageTitles=pageKind==='contact'?['Contacto','Contact']:pageKind==='gallery'?['Galería','Gallery']:['Trenzas y belleza en La Habana','Braids & Beauty in Havana'];
+  const pageKind=window.location.pathname.endsWith('contact.html')?'contact':window.location.pathname.endsWith('gallery.html')?'gallery':window.location.pathname.endsWith('booking.html')?'booking':'home';
+  const pageTitles=pageKind==='contact'?['Contacto','Contact']:pageKind==='gallery'?['Galería','Gallery']:pageKind==='booking'?['Solicitud de cita','Appointment request']:['Trenzas y belleza en La Habana','Braids & Beauty in Havana'];
   document.title=`${config.businessName||"Elegguacita's Raíces & Rizos"} | ${language==='es'?pageTitles[0]:pageTitles[1]}`;
   const description=document.querySelector('meta[name="description"]');
   if(description&&config.location)description.content=language==='es'?`Trenzas, extensiones, cuidado natural y pestañas en ${config.location}.`:`Braids, extensions, natural hair care, and lashes in ${config.location}.`;
@@ -55,6 +63,7 @@ languageButton.addEventListener('click',()=>{
   languageButton.setAttribute('aria-label',language==='en'?'Switch language to Spanish':'Cambiar idioma a inglés');
   applySettings();
   renderGallery();
+  renderInstagramSample();
 });
 menuButton.addEventListener('click',()=>{
   const open=menuButton.getAttribute('aria-expanded')==='true';
@@ -81,3 +90,18 @@ function renderGallery(){
   });
 }
 renderGallery();
+
+function renderInstagramSample(){
+  const target=document.querySelector('[data-instagram-sample-grid]');
+  if(!target||!Array.isArray(config.instagramSamplePosts))return;
+  target.innerHTML='';
+  config.instagramSamplePosts.forEach((post,index)=>{
+    const link=document.createElement('a');
+    link.className='ig-sample-tile';link.href=post.url;link.target='_blank';link.rel='noopener noreferrer';
+    link.setAttribute('aria-label',post[language==='es'?'altEs':'altEn']||'Instagram post');
+    const image=document.createElement('img');image.src=post.src;image.alt=post[language==='es'?'altEs':'altEn']||'';image.loading=index<3?'eager':'lazy';image.decoding='async';
+    const mark=document.createElement('span');mark.className='ig-tile-mark';mark.setAttribute('aria-hidden','true');mark.textContent='♡';
+    link.append(image,mark);target.append(link);
+  });
+}
+renderInstagramSample();
