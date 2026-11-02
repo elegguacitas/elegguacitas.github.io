@@ -11,7 +11,7 @@ window.SITE_CONFIG = {
   email: "",
   whatsapp: "5358478023", // International digits only
   facebook: "",
-  instagram: "",
+  instagram: "https://www.instagram.com/panama_slim_/",
   galleryPhotos: [
     { src: "assets/photos/braids-close.webp", alt: "Trenzas vistas de cerca", en: "Braids, up close", es: "Trenzas de cerca" },
     { src: "assets/photos/braids-glasses.webp", alt: "Mujer con trenzas y gafas", en: "Braids with a personal touch", es: "Trenzas con un toque personal" },
